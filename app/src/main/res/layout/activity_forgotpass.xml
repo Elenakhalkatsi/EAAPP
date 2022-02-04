@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ForgotPassActivity">
+
+    <ImageView
+        android:id="@+id/mainLogo"
+        android:layout_width="125dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="4dp"
+        app:srcCompat="@drawable/mainlogo"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/signUptext"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="254dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="#1E1C1C"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#2196F3"
+        android:textColorHint="#2196F3"
+        android:autofillHints="" />
+
+
+
+    <Button
+        android:id="@+id/recoverButton"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2196F3"
+        android:text="@string/recover"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textColor="#2196F3"
+            android:textAlignment="textStart"
+            android:layout_marginEnd="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signInText"
+            android:layout_width="104dp"
+            android:layout_height="22dp"
+            android:text="@string/sign_in"
+            android:textAlignment="textEnd"
+            android:layout_marginStart="15dp"
+            android:textColor="#2196F3"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
